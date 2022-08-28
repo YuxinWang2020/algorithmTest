@@ -1,8 +1,8 @@
 library(tidyverse)
 
 prepare_data <- function(index_data_path, finance_data_path) {
-  index_data_path <- "index_data.csv"
-  finance_data_path <- "finance_data.csv"
+  index_data_path <- "dhl-IT/index_data.csv"
+  finance_data_path <- "dhl-IT/finance_data.csv"
 
   # read the "./data/index_data.csv" file
   index_data <- read_csv(index_data_path)

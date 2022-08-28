@@ -3,7 +3,7 @@ import pandas as pd
 
 def process_data():
     # Do not alter this line.
-    biopics = pd.read_csv("biopics.csv", encoding='latin-1')
+    biopics = pd.read_csv("dhl-IT/biopics.csv", encoding='latin-1')
     # Write your code here.
     biopics = biopics.drop_duplicates() # filter out duplicated rows
     biopics = biopics.rename(columns={'box_office': 'earnings'}) # rename box_office to earnings
